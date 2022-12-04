@@ -17,87 +17,87 @@ lvim.builtin.lualine.inactive_sections = {
 
 -- Colours, maps and icons {{{2
 local colors = {
-    -- bg               = '#0f1117',
-    bg               = '#3f3f3f',
-    modetext         = '#000000',
+    -- bg               =NONE,
+    bg               ='NONE',
+    modetext         = '#DFDDF3',
 
-    giticonbg        = '#FF8800',
-    gitbg            = '#5C2C2E',
-    gittext          = '#C5C5C5',
+    giticonbg        = '#286983',
+    gitbg            = 'NONE',
+    gittext          = '#DFDDF3',
 
-    diagerror        = '#F44747',
-    diagwarning      = '#FF8800',
-    diaghint         = '#4FC1FF',
-    diaginfo         = '#FFCC66',
+    diagerror        = '#b4637a',
+    diagwarning      = '#d7827e',
+    diaghint         = '#56949f',
+    diaginfo         = '#ea9d34',
 
-    lspiconbg        = '#68AF00',
+    lspiconbg        = '#286983',
     lspbg            = '#304B2E',
-    lsptext          = '#C5C5C5',
+    lsptext          = '#DFDDF3',
 
-    typeiconbg       = '#FF8800',
-    typebg           = '#5C2C2E',
-    typetext         = '#C5C5C5',
-    typeiconbgrw     = '#229900',
-    typetextmodified = '#FF3300',
-    typeiconbgro     = '#000000',
-    typetextreadonly = '#000000',
+    typeiconbg       = 'NONE',
+    typebg           = 'NONE',
+    typetext         = 'NONE',
+    typeiconbgrw     = '#286983',
+    typetextmodified = 'NONE',
+    typeiconbgro     = '#286983',
+    typetextreadonly = '#DFDDF3',
 
-    statsiconbg      = '#9CDCFE',
-    statsbg          = '#5080A0',
-    statstext        = '#000000',
+    statsiconbg      = '#286983',
+    statsbg          = '#56949f',
+    statstext        = '#DFDDF3',
 
-    lineokfg         = '#000000',
-    lineokbg         = '#5080A0',
-    linelongerrorfg  = '#FF0000',
-    linelongwarnfg   = '#FFFF00',
-    linelongbg       = '#5080A0',
+    lineokfg         = 'NONE',
+    lineokbg         = '#286983',
+    linelongerrorfg  = '#b4637a',
+    linelongwarnfg   = '#ea9d34',
+    linelongbg       = '#56949f',
 
-    shortbg          = '#DCDCAA',
-    shorttext        = '#000000',
+    shortbg          = 'NONE',
+    shorttext        = '#DFDDF3',
 
-    shortrightbg     = '#3F3F3F',
+    shortrightbg     = 'NONE',
     shortrighttext   = '#7C4C4E',
 
-    red              = '#D16969',
-    yellow           = '#DCDCAA',
-    magenta          = '#D16D9E',
-    green            = '#608B4E',
-    orange           = '#FF8800',
-    purple           = '#C586C0',
-    blue             = '#569CD6',
-    cyan             = '#4EC9B0'
+    red              = '#b4637a',
+    yellow           = '#ea9d34',
+    magenta          = '#d7827e',
+    green            = '#286983',
+    orange           = 'NONE',
+    purple           = '#907aa9',
+    blue             = '#31748f',
+    cyan             = '#56949f'
 }
 
 local mode_map = {
-    ['n']        = {'#569CD6', ' NORMAL '},
-    ['i']        = {'#D16969', ' INSERT '},
-    ['R']        = {'#D16969', 'REPLACE '},
-    ['c']        = {'#608B4E', 'COMMAND '},
-    ['v']        = {'#C586C0', ' VISUAL '},
-    ['V']        = {'#C586C0', ' VIS-LN '},
-    ['']       = {'#C586C0', 'VIS-BLK '},
-    ['s']        = {'#FF8800', ' SELECT '},
-    ['S']        = {'#FF8800', ' SEL-LN '},
-    ['']       = {'#DCDCAA', 'SEL-BLK '},
-    ['t']        = {'#569CD6', 'TERMINAL'},
-    ['Rv']       = {'#D16D69', 'VIR-REP '},
-    ['rm']       = {'#FF0000', '- More -'},
-    ['r']        = {'#FF0000', "- Hit-Enter -"},
-    ['r?']       = {'#FF0000', "- Confirm -"},
-    ['cv']       = {'#569CD6', "Vim Ex Mode"},
-    ['ce']       = {'#569CD6', "Normal Ex Mode"},
-    ['!']        = {'#569CD6', "Shell Running"},
-    ['ic']       = {'#DCDCAA', 'Insert mode completion |compl-generic|'},
-    ['no']       = {'#DCDCAA', 'Operator-pending'},
-    ['nov']      = {'#DCDCAA', 'Operator-pending (forced charwise |o_v|)'},
-    ['noV']      = {'#DCDCAA', 'Operator-pending (forced linewise |o_V|)'},
-    ['noCTRL-V'] = {'#DCDCAA', 'Operator-pending (forced blockwise |o_CTRL-V|) CTRL-V is one character'},
-    ['niI']      = {'#DCDCAA', 'Normal using |i_CTRL-O| in |Insert-mode|'},
-    ['niR']      = {'#DCDCAA', 'Normal using |i_CTRL-O| in |Replace-mode|'},
-    ['niV']      = {'#DCDCAA', 'Normal using |i_CTRL-O| in |Virtual-Replace-mode|'},
-    ['ix']       = {'#DCDCAA', 'Insert mode |i_CTRL-X| completion'},
-    ['Rc']       = {'#DCDCAA', 'Replace mode completion |compl-generic|'},
-    ['Rx']       = {'#DCDCAA', 'Replace mode |i_CTRL-X| completion'},
+    ['n']        = {'#286983', ' NORMAL '},
+    ['i']        = {'#B3637A', ' INSERT '},
+    ['R']        = {'#B3637A', 'REPLACE '},
+    ['c']        = {'#6E6A86', 'COMMAND '},
+    ['v']        = {'#907AA8', ' VISUAL '},
+    ['V']        = {'#907AA8', ' VIS-LN '},
+    ['']       = {'#907AA8', 'VIS-BLK '},
+    ['s']        = {'#ea9d34', ' SELECT '},
+    ['S']        = {'#ea9d34', ' SEL-LN '},
+    ['']       = {'#ea9d34', 'SEL-BLK '},
+    ['t']        = {'#2a283e', 'TERMINAL'},
+    ['Rv']       = {'#B3637A', 'VIR-REP '},
+    ['rm']       = {'#b4637a', '- More -'},
+    ['r']        = {'#b4637a', "- Hit-Enter -"},
+    ['r?']       = {'#b4637a', "- Confirm -"},
+    ['cv']       = {'#286983', "Vim Ex Mode"},
+    ['ce']       = {'#286983', "Normal Ex Mode"},
+    ['!']        = {'#286983', "Shell Running"},
+    ['ic']       = {'#B3637A', 'Insert mode completion |compl-generic|'},
+    ['no']       = {'#ea9d34', 'Operator-pending'},
+    ['nov']      = {'#ea9d34', 'Operator-pending (forced charwise |o_v|)'},
+    ['noV']      = {'#ea9d34', 'Operator-pending (forced linewise |o_V|)'},
+    ['noCTRL-V'] = {'#ea9d34', 'Operator-pending (forced blockwise |o_CTRL-V|) CTRL-V is one character'},
+    ['niI']      = {'#ea9d34', 'Normal using |i_CTRL-O| in |Insert-mode|'},
+    ['niR']      = {'#ea9d34', 'Normal using |i_CTRL-O| in |Replace-mode|'},
+    ['niV']      = {'#ea9d34', 'Normal using |i_CTRL-O| in |Virtual-Replace-mode|'},
+    ['ix']       = {'#ea9d34', 'Insert mode |i_CTRL-X| completion'},
+    ['Rc']       = {'#ea9d34', 'Replace mode completion |compl-generic|'},
+    ['Rx']       = {'#ea9d34', 'Replace mode |i_CTRL-X| completion'},
 }
 
 -- For icons see this cheatsheet and just copy and paste the icons: https://www.nerdfonts.com/cheat-sheet
@@ -699,19 +699,4 @@ ins_right {
 -- }}}2
 
 -- }}}1
-
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
 
