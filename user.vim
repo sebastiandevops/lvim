@@ -621,7 +621,7 @@ iab adn and
 autocmd! BufEnter,BufLeave,Filetype * if &ft=="alpha"| highlight extraWhitespace NONE |endif | autocmd WinLeave <buffer> highlight extraWhitespace guibg=Red
 
 " Highlight matching words in buffer.
-" autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
 " Remove white space on save for certain file types.
 autocmd BufWrite *.py :call DeleteEndingWhiteSpace()
