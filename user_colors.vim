@@ -80,7 +80,7 @@ highlight lualine_x_14_inactive ctermbg=NONE  gui=bold      guifg=#6e6a86     gu
 highlight lualine_x_20_inactive ctermbg=NONE                guifg=#6e6a86     guibg=NONE
 
 " Match parentheses
-highlight MatchParen                          gui=bold      guifg=#cecacd     guibg=#b4637a
+highlight MatchParen                    gui=bold,underline  guifg=#e0def4     guibg=#44415a
 
 "Comments color
 highlight Comment                                           guifg=#6e6a86     guibg=NOE
