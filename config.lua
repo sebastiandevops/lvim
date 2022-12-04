@@ -127,7 +127,9 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- }}}1
 
 -- Vim config {{{1
+-- vim.cmd('source ~/.config/lvim/lua/user/lualine.lua')
 vim.cmd('source ~/.config/lvim/user.vim')
+-- }}}1
 
 -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
@@ -201,6 +203,8 @@ lvim.builtin.treesitter.ensure_installed = {
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
+
+lvim.builtin.lualine.options.theme                  = "curvywurvy"
 
 -- generic LSP settings
 
