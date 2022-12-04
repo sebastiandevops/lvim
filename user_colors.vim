@@ -11,8 +11,8 @@ highlight LineNr                ctermbg=NONE                                  gu
 
 " Show white space characters
 set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
-highlight NonText                             gui=bold     guifg=#56526e      guibg=NONE
-highlight Whitespace                          gui=bold     guifg=#56526e      guibg=NONE
+highlight NonText                             gui=bold     guifg=#403d52      guibg=NONE
+highlight Whitespace                          gui=bold     guifg=#403d52      guibg=NONE
 " Pop-up and Float menu
 highlight Pmenu                                            guifg=Wheat        guibg=NONE
 highlight PmenuSbar                                                           guibg=NONE
