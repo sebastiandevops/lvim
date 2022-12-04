@@ -13,6 +13,7 @@ highlight LineNr                ctermbg=NONE                                  gu
 set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
 highlight NonText                             gui=bold     guifg=#403d52      guibg=NONE
 highlight Whitespace                          gui=bold     guifg=#403d52      guibg=NONE
+
 " Pop-up and Float menu
 highlight Pmenu                                            guifg=Wheat        guibg=NONE
 highlight PmenuSbar                                                           guibg=NONE
@@ -30,9 +31,18 @@ highlight ColorColumn           ctermbg=NONE                                  gu
 " Nvim tree root folder color
 highlight NvimTreeRootFolder                               guifg=8f8f8f
 
+" Git changes and margins
+highlight GitSignsAdd                                      guifg=#286983      guibg=NONE
+highlight GitSignsDelete                                   guifg=#b4637a      guibg=NONE
+highlight GitSignsChange                                   guifg=#c4a7e7      guibg=NONE
+highlight GitSignsCurrentLineBlame            gui=bold     guifg=#393552      guibg=NONE
+highlight default link gitblame GitSignsCurrentLineBlame
+
 " Diff colours
 highlight DiffAdd               ctermbg=NONE                                  guibg=NONE
 highlight DiffChange            ctermbg=NONE                                  guibg=NONE
+highlight DiffDelete                                       guifg=#552222      guibg=NONE
+highlight DiffText                                         guifg=#b4637a      guibg=NONE
 
 " Selected area colour
 highlight VisualNOS             ctermbg=NONE                                  guibg=NONE
@@ -74,3 +84,14 @@ highlight MatchParen                          gui=bold      guifg=#cecacd     gu
 
 "Comments color
 highlight Comment                                           guifg=#6e6a86     guibg=NOE
+
+" Highlight #! lines... Both good and bad.
+highlight sheBangGood                    gui=bold,underline guifg=#b4637a     guibg=NONE
+call matchadd('sheBangGood', '^#!/usr/bin/env \(bash\|-S bash -e\|sh\|python3\|zsh\|groovy\|perl\)$', 20)
+
+highlight sheBangBad                          gui=bold      guifg=#b4637a     guibg=NONE
+call matchadd('sheBangBad', '^#!.*')
+
+" current word highlighting
+" highlight IncSearch                         gui=underline guifg=#b4637a     guibg=NONE
+highlight IncSearch                           gui=bold      guifg=#e0def4     guibg=#383742
