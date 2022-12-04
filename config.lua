@@ -16,6 +16,8 @@ vim.o.transparent = true
 
 -- vim.g.material_style = "darker"
 -- transparent windows enable
+-- }}}1
+
 -- Dashboard/Alpha {{{1
 
 lvim.builtin.alpha.dashboard.section.header.opts.hl = ""
@@ -45,7 +47,8 @@ lvim.builtin.alpha.dashboard.section.buttons.entries = {
 { "c",   "  Edit Configuration",          "<CMD>e ~/.config/lvim/config.lua<CR>" },
 { "g",   "  Git status",                  "<CMD>Telescope git_status<CR>" }
 }
--- }}}2
+-- }}}1
+
 -- lvim config {{{1
 lvim.transparent_window                                       = true
 lvim.colorscheme                                              = "meliora"
@@ -122,6 +125,7 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- lvim.builtin.theme.options.dim_inactive = true
 -- lvim.builtin.theme.options.style = "storm"
 -- }}}1
+
 -- Vim config {{{1
 vim.cmd('source ~/.config/lvim/user.vim')
 
@@ -271,7 +275,7 @@ linters.setup {
   --     filetypes = { "javascript", "python" },
   --   },
 }
-
+-- }}}1
 
 -- Additional Plugins{{{1
 lvim.plugins = {
@@ -520,6 +524,7 @@ lvim.plugins = {
   },
 }
 -- }}}1
+
 -- Autocommands {{{1 (https://neovim.io/doc/user/autocmd.html)
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*" },
@@ -616,7 +621,6 @@ local components = require("lvim.core.lualine.components")
 lvim.builtin.lualine.sections.lualine_a = { "mode" }
 lvim.builtin.lualine.sections.lualine_b = {
   components.branch,
-  components.diff
 }
 lvim.builtin.lualine.sections.lualine_x = { "fileformat", "filetype" }
 lvim.builtin.lualine.sections.lualine_y = { components.spaces, components.lsp, components.location }
