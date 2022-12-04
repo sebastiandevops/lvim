@@ -7,9 +7,12 @@ highlight CursorLineNr          ctermbg=NONE                                  gu
 
 " Normal mode
 highlight Normal                ctermbg=NONE                                  guibg=NONE
-highlight NonText               ctermbg=NONE                                  guibg=NONE
 highlight LineNr                ctermbg=NONE                                  guibg=NONE
 
+" Show white space characters
+set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
+highlight NonText                             gui=bold     guifg=#56526e      guibg=NONE
+highlight Whitespace                          gui=bold     guifg=#56526e      guibg=NONE
 " Pop-up and Float menu
 highlight Pmenu                                            guifg=Wheat        guibg=NONE
 highlight PmenuSbar                                                           guibg=NONE
