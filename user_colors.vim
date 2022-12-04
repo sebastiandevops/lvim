@@ -24,11 +24,11 @@ highlight NonText                             gui=bold     guifg=#403d52      gu
 highlight Whitespace                          gui=bold     guifg=#403d52      guibg=NONE
 
 " Pop-up and Float menu
-highlight Pmenu                                            guifg=Wheat        guibg=NONE
+highlight Pmenu                                            guifg=#6e6a86      guibg=NONE
 highlight PmenuSbar                                                           guibg=NONE
 highlight PmenuThumb                                                          guibg=NONE
-highlight PmenuSel                            gui=bold     guifg=Black        guibg=NONE
-highlight NormalFloat                         gui=NONE     guifg=Wheat        guibg=NONE
+highlight PmenuSel                            gui=bold     guifg=#e0def4      guibg=NONE
+highlight NormalFloat                         gui=NONE     guifg=#6e6a86      guibg=NONE
 highlight NormalNC                                                            guibg=NONE
 highlight VertSplit                                        guifg=#444444      guibg=NONE
 
