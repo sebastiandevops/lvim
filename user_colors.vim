@@ -94,4 +94,4 @@ call matchadd('sheBangBad', '^#!.*')
 
 " current word highlighting
 " highlight IncSearch                         gui=underline guifg=#b4637a     guibg=NONE
-highlight IncSearch                           gui=bold      guifg=#e0def4     guibg=#383742
+highlight IncSearch                           gui=bold      guifg=#e0def4     guibg=NONE
