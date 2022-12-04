@@ -1,5 +1,14 @@
 set termguicolors
 
+" Tweaks to zenburn... I only like red to mean a problem.
+highlight Boolean               ctermfg=181                                   guifg=#bfbfbf
+highlight Character             ctermfg=181   cterm=bold   gui=bold           guifg=#a3aca3
+highlight Constant              ctermfg=181   cterm=bold   gui=NONE           guifg=#a3dcdc
+highlight SpecialChar           ctermfg=181   cterm=bold   gui=bold           guifg=#a3a3dc
+highlight String                ctermfg=174                                   guifg=#3e8fb0
+highlight Tag                   ctermfg=181   cterm=bold   gui=bold           guifg=#93e893
+highlight javaTSVariable                                                      guifg=#CEDF99
+
 " Cursor colors
 highlight CursorLine                                       guifg=NONE         guibg=#403d52
 highlight CursorColumn          ctermbg=NONE                                  guibg=NONE
