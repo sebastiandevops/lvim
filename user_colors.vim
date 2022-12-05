@@ -31,6 +31,7 @@ highlight PmenuSel                            gui=bold     guifg=#e0def4      gu
 highlight NormalFloat                         gui=NONE     guifg=#6e6a86      guibg=NONE
 highlight NormalNC                                                            guibg=NONE
 highlight VertSplit                                        guifg=#444444      guibg=NONE
+highlight Title                                            guifg=#e0def4      guibg=NONE
 
 " vertical split colors
 highlight VertSplit             ctermbg=NONE                                  guibg=NONE
