@@ -524,7 +524,22 @@ lvim.plugins = {
     -- Uncomment next line if you want to follow only stable versions
     -- tag = "*"
   },
+  -- Neovim plugin to inserts a shebang line when editing a new file.
+  { 'samirettali/shebang.nvim' },
 }
+-- }}}1
+
+-- Plugins configurations {{{1
+-- samirettali/shebang.nvim config
+vim.g.shebang_commands = {
+  py = '/usr/bin/env python3',
+  sh = '/usr/bin/env bash'
+}
+vim.g.shebang_shells = {
+  py = 'python3.9',
+  sh = 'bash'
+}
+
 -- }}}1
 
 -- Autocommands {{{1 (https://neovim.io/doc/user/autocmd.html)
