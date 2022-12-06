@@ -109,3 +109,12 @@ highlight IncSearch                           gui=bold      guifg=#e0def4     gu
 
 "Highlight URL
 highlight HighlightUrl cterm=underline        ctermfg=31    guifg=#286983     gui=underline
+
+" Lualine highlighting
+highlight lualine_c_5_normal                                                  guifg=#908CA9
+highlight lualine_c_5_insert                                                  guifg=#908CA9
+highlight lualine_c_5_visual                                                  guifg=#908CA9
+highlight lualine_c_5_replace                                                 guifg=#908CA9
+highlight lualine_c_5_command                                                 guifg=#908CA9
+highlight lualine_c_5_terminal                                                guifg=#908CA9
+highlight lualine_c_5_inactive                                                guifg=#908CA9
