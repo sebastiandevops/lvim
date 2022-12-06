@@ -537,7 +537,6 @@ vim.g.shebang_commands = {
 }
 vim.g.shebang_shells = {
   py = 'python3.9',
-  sh = 'bash'
 }
 
 -- }}}1
