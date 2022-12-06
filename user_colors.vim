@@ -12,7 +12,7 @@ highlight Tag                   ctermfg=181   cterm=bold   gui=bold           gu
 highlight CursorLine                                       guifg=NONE         guibg=#403d52
 highlight CursorColumn          ctermbg=NONE                                  guibg=NONE
 highlight CursorLineNr          ctermbg=NONE                                  guibg=NONE
-
+highlight SpecialKey                          gui=bold     guifg=#e0def4      guibg=NONE
 " Normal mode
 highlight Normal                ctermbg=NONE                                  guibg=NONE
 highlight LineNr                ctermbg=NONE                                  guibg=NONE
