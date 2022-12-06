@@ -111,57 +111,57 @@ highlight IncSearch                           gui=bold      guifg=#e0def4     gu
 highlight HighlightUrl cterm=underline        ctermfg=31    guifg=#286983     gui=underline
 
 " Lualine highlighting
-highlight lualine_c_5_normal                                                  guifg=#908CA9
-highlight lualine_c_5_insert                                                  guifg=#908CA9
-highlight lualine_c_5_visual                                                  guifg=#908CA9
-highlight lualine_c_5_replace                                                 guifg=#908CA9
-highlight lualine_c_5_command                                                 guifg=#908CA9
-highlight lualine_c_5_terminal                                                guifg=#908CA9
-highlight lualine_c_5_inactive                                                guifg=#908CA9
+highlight lualine_c_5_normal                  ctermfg=247   guifg=#908CA9
+highlight lualine_c_5_insert                  ctermfg=247   guifg=#908CA9
+highlight lualine_c_5_visual                  ctermfg=247   guifg=#908CA9
+highlight lualine_c_5_replace                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_5_command                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_5_terminal                ctermfg=247   guifg=#908CA9
+highlight lualine_c_5_inactive                ctermfg=247   guifg=#908CA9
 
-highlight lualine_c_15_normal                                                 guifg=#908CA9
-highlight lualine_c_15_insert                                                 guifg=#908CA9
-highlight lualine_c_15_visual                                                 guifg=#908CA9
-highlight lualine_c_15_replace                                                guifg=#908CA9
-highlight lualine_c_15_command                                                guifg=#908CA9
-highlight lualine_c_15_terminal                                               guifg=#908CA9
-highlight lualine_c_15_inactive                                               guifg=#908CA9
+highlight lualine_c_15_normal                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_15_insert                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_15_visual                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_15_replace                ctermfg=247   guifg=#908CA9
+highlight lualine_c_15_command                ctermfg=247   guifg=#908CA9
+highlight lualine_c_15_terminal               ctermfg=247   guifg=#908CA9
+highlight lualine_c_15_inactive               ctermfg=247   guifg=#908CA9
 
-highlight lualine_c_diff_added_normal                       guifg=#286983
-highlight lualine_c_diff_added_insert                       guifg=#286983
-highlight lualine_c_diff_added_visual                       guifg=#286983
-highlight lualine_c_diff_added_replace                      guifg=#286983
-highlight lualine_c_diff_added_command                      guifg=#286983
-highlight lualine_c_diff_added_terminal                     guifg=#286983
-highlight lualine_c_diff_added_inactive                     guifg=#286983
+highlight lualine_c_diff_added_normal         ctermfg=31    guifg=#286983
+highlight lualine_c_diff_added_insert         ctermfg=31    guifg=#286983
+highlight lualine_c_diff_added_visual         ctermfg=31    guifg=#286983
+highlight lualine_c_diff_added_replace        ctermfg=31    guifg=#286983
+highlight lualine_c_diff_added_command        ctermfg=31    guifg=#286983
+highlight lualine_c_diff_added_terminal       ctermfg=31    guifg=#286983
+highlight lualine_c_diff_added_inactive       ctermfg=31    guifg=#286983
 
-highlight lualine_c_diff_removed_normal                     guifg=#b4637a
-highlight lualine_c_diff_removed_insert                     guifg=#b4637a
-highlight lualine_c_diff_removed_visual                     guifg=#b4637a
-highlight lualine_c_diff_removed_replace                    guifg=#b4637a
-highlight lualine_c_diff_removed_command                    guifg=#b4637a
-highlight lualine_c_diff_removed_terminal                   guifg=#b4637a
-highlight lualine_c_diff_removed_inactive                   guifg=#b4637a
+highlight lualine_c_diff_removed_normal       ctermfg=168   guifg=#b4637a
+highlight lualine_c_diff_removed_insert       ctermfg=168   guifg=#b4637a
+highlight lualine_c_diff_removed_visual       ctermfg=168   guifg=#b4637a
+highlight lualine_c_diff_removed_replace      ctermfg=168   guifg=#b4637a
+highlight lualine_c_diff_removed_command      ctermfg=168   guifg=#b4637a
+highlight lualine_c_diff_removed_terminal     ctermfg=168   guifg=#b4637a
+highlight lualine_c_diff_removed_inactive     ctermfg=168   guifg=#b4637a
 
 " DevIcons colors
-highlight DevIconTxt                                        guifg=#286983
-highlight DevIconZshrc                                      guifg=#286983
-highlight DevIconZsh                                        guifg=#286983
-highlight DevIconZshenv                                     guifg=#286983
-highlight DevIconClojureC                                   guifg=#286983
-highlight DevIconD                                          guifg=#286983
-highlight DevIconBashProfile                                guifg=#286983
-highlight DevIconTerminal                                   guifg=#286983
-highlight DevIconBashrc                                     guifg=#286983
-highlight DevIconGvimrc                                     guifg=#286983
-highlight DevIconTwig                                       guifg=#286983
-highlight DevIconBat                                        guifg=#286983
-highlight DevIconZshprofile                                 guifg=#286983
-highlight DevIconVue                                        guifg=#286983
-highlight DevIconClojure                                    guifg=#286983
-highlight DevIconRproj                                      guifg=#286983
-highlight DevIconBash                                       guifg=#286983
-highlight DevIconCsv                                        guifg=#286983
-highlight DevIconXls                                        guifg=#286983
-highlight DevIconVim                                        guifg=#286983
-highlight DevIconCMakeLists                                 guifg=#286983
+highlight DevIconTxt                          ctermfg=31    guifg=#286983
+highlight DevIconZshrc                        ctermfg=31    guifg=#286983
+highlight DevIconZsh                          ctermfg=31    guifg=#286983
+highlight DevIconZshenv                       ctermfg=31    guifg=#286983
+highlight DevIconClojureC                     ctermfg=31    guifg=#286983
+highlight DevIconD                            ctermfg=31    guifg=#286983
+highlight DevIconBashProfile                  ctermfg=31    guifg=#286983
+highlight DevIconTerminal                     ctermfg=31    guifg=#286983
+highlight DevIconBashrc                       ctermfg=31    guifg=#286983
+highlight DevIconGvimrc                       ctermfg=31    guifg=#286983
+highlight DevIconTwig                         ctermfg=31    guifg=#286983
+highlight DevIconBat                          ctermfg=31    guifg=#286983
+highlight DevIconZshprofile                   ctermfg=31    guifg=#286983
+highlight DevIconVue                          ctermfg=31    guifg=#286983
+highlight DevIconClojure                      ctermfg=31    guifg=#286983
+highlight DevIconRproj                        ctermfg=31    guifg=#286983
+highlight DevIconBash                         ctermfg=31    guifg=#286983
+highlight DevIconCsv                          ctermfg=31    guifg=#286983
+highlight DevIconXls                          ctermfg=31    guifg=#286983
+highlight DevIconVim                          ctermfg=31    guifg=#286983
+highlight DevIconCMakeLists                   ctermfg=31    guifg=#286983
