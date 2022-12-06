@@ -119,6 +119,14 @@ highlight lualine_c_5_command                 ctermfg=247   guifg=#908CA9
 highlight lualine_c_5_terminal                ctermfg=247   guifg=#908CA9
 highlight lualine_c_5_inactive                ctermfg=247   guifg=#908CA9
 
+highlight lualine_c_8_normal                  ctermfg=247   guifg=#908CA9
+highlight lualine_c_8_insert                  ctermfg=247   guifg=#908CA9
+highlight lualine_c_8_visual                  ctermfg=247   guifg=#908CA9
+highlight lualine_c_8_replace                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_8_command                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_8_terminal                ctermfg=247   guifg=#908CA9
+highlight lualine_c_8_inactive                ctermfg=247   guifg=#908CA9
+
 highlight lualine_c_15_normal                 ctermfg=247   guifg=#908CA9
 highlight lualine_c_15_insert                 ctermfg=247   guifg=#908CA9
 highlight lualine_c_15_visual                 ctermfg=247   guifg=#908CA9
@@ -126,6 +134,14 @@ highlight lualine_c_15_replace                ctermfg=247   guifg=#908CA9
 highlight lualine_c_15_command                ctermfg=247   guifg=#908CA9
 highlight lualine_c_15_terminal               ctermfg=247   guifg=#908CA9
 highlight lualine_c_15_inactive               ctermfg=247   guifg=#908CA9
+
+highlight lualine_c_20_normal                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_20_insert                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_20_visual                 ctermfg=247   guifg=#908CA9
+highlight lualine_c_20_replace                ctermfg=247   guifg=#908CA9
+highlight lualine_c_20_command                ctermfg=247   guifg=#908CA9
+highlight lualine_c_20_terminal               ctermfg=247   guifg=#908CA9
+highlight lualine_c_20_inactive               ctermfg=247   guifg=#908CA9
 
 highlight lualine_c_diff_added_normal         ctermfg=31    guifg=#286983
 highlight lualine_c_diff_added_insert         ctermfg=31    guifg=#286983
@@ -165,3 +181,5 @@ highlight DevIconCsv                          ctermfg=31    guifg=#286983
 highlight DevIconXls                          ctermfg=31    guifg=#286983
 highlight DevIconVim                          ctermfg=31    guifg=#286983
 highlight DevIconCMakeLists                   ctermfg=31    guifg=#286983
+highlight DevIconStyle                        ctermfg=31    guifg=#286983
+highlight DevIconR                            ctermfg=31    guifg=#286983
