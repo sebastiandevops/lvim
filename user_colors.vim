@@ -13,6 +13,8 @@ highlight CursorLine                                       guifg=NONE         gu
 highlight CursorColumn          ctermbg=NONE                                  guibg=NONE
 highlight CursorLineNr          ctermbg=NONE                                  guibg=NONE
 highlight SpecialKey                          gui=bold     guifg=#e0def4      guibg=NONE
+highlight Cursor                                           guifg=NONE         guibg=#403d52
+
 " Normal mode
 highlight Normal                ctermbg=NONE                                  guibg=NONE
 highlight LineNr                ctermbg=NONE                                  guibg=NONE
