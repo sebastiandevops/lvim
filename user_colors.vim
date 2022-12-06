@@ -118,3 +118,11 @@ highlight lualine_c_5_replace                                                 gu
 highlight lualine_c_5_command                                                 guifg=#908CA9
 highlight lualine_c_5_terminal                                                guifg=#908CA9
 highlight lualine_c_5_inactive                                                guifg=#908CA9
+
+highlight lualine_c_15_normal                                                 guifg=#908CA9
+highlight lualine_c_15_insert                                                 guifg=#908CA9
+highlight lualine_c_15_visual                                                 guifg=#908CA9
+highlight lualine_c_15_replace                                                guifg=#908CA9
+highlight lualine_c_15_command                                                guifg=#908CA9
+highlight lualine_c_15_terminal                                               guifg=#908CA9
+highlight lualine_c_15_inactive                                               guifg=#908CA9
