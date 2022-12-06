@@ -7,7 +7,6 @@ highlight Constant              ctermfg=181   cterm=bold   gui=NONE           gu
 highlight SpecialChar           ctermfg=181   cterm=bold   gui=bold           guifg=#a3a3dc
 highlight String                ctermfg=174                                   guifg=#3e8fb0
 highlight Tag                   ctermfg=181   cterm=bold   gui=bold           guifg=#93e893
-highlight javaTSVariable                                                      guifg=#CEDF99
 
 " Cursor colors
 highlight CursorLine                                       guifg=NONE         guibg=#403d52
