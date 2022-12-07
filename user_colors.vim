@@ -11,7 +11,7 @@ highlight Tag                   ctermfg=181   cterm=bold   gui=bold           gu
 " Cursor colors
 highlight CursorLine                                       guifg=NONE         guibg=#403d52
 highlight CursorColumn          ctermbg=NONE                                  guibg=NONE
-highlight CursorLineNr          ctermbg=NONE                                  guibg=NONE
+highlight CursorLineNr          ctermbg=NONE  gui=bold     guifg=#e0def4      guibg=NONE
 highlight SpecialKey                          gui=bold     guifg=#e0def4      guibg=NONE
 highlight Cursor                                           guifg=NONE         guibg=#403d52
 
