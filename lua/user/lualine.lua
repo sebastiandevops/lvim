@@ -1,11 +1,6 @@
 -- lualine config {{{1
 local components = require("lvim.core.lualine.components")
-lvim.builtin.lualine.sections.lualine_a = { "mode" }
-lvim.builtin.lualine.sections.lualine_b = {
-  components.branch,
-}
-lvim.builtin.lualine.sections.lualine_x = { "fileformat", "filetype" }
-lvim.builtin.lualine.sections.lualine_y = { components.spaces, components.lsp, components.location }
+-- lvim.builtin.lualine.sections.lualine_a = { "mode" }
 lvim.builtin.lualine.sections.lualine_z = { "progress" }
 
 lvim.builtin.lualine.options.theme = {
