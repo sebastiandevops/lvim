@@ -520,6 +520,7 @@ set expandtab              " Converts tabs to spaces
 set smartindent            " Makes indenting smart
 set autoindent             " Good auto indent
 set laststatus=2           " Always display the status line
+set number relativenumber  " Line numbers and relative numbers
 set cursorline             " Enable highlighting of the current line
 set background=dark        " tell Vim what the background colour looks like
 set showtabline=2          " Always show tabs
