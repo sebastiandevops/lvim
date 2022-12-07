@@ -145,11 +145,12 @@ lvim.builtin.which_key.mappings["t"] = {
 
 lvim.builtin.which_key.mappings["r"] = {"<cmd>SearchBoxReplace confirm=menu<CR>", "Search&Replace" }
 
-lvim.builtin.which_key.mappings["|"] = {
+lvim.builtin.which_key.mappings["o"] = {
     name = "Toggle Display Options",
     a = { ":call ToggleAll()<CR>",                         "Toggle All"},
     c = { ":call ToggleColourCursorColumn()<CR>",          "Toggle cursor Column visibility"},
     e = { ":call ToggleColourWhiteSpaceAtEndOfLine()<CR>", "Toggle whitespace at End of line visibility"},
+    d = { "<cmd>DocsViewToggle<cr>",                       "Toggle docs-view"},
     h = { ":ColorizerToggle<CR>",                          "Toggle Hex colour and colour name matches"},
     i = { ":call ToggleColourIncSearch()<CR>",             "Toggle hIghlight matching words under cursor"},
     l = { ":call ToggleColourCursorLine()<CR>",            "Toggle cursor Line visibility"},
@@ -527,6 +528,17 @@ lvim.plugins = {
   },
   -- Neovim plugin to inserts a shebang line when editing a new file.
   { 'samirettali/shebang.nvim' },
+  {
+    "amrbashir/nvim-docs-view",
+    opt = true,
+    cmd = { "DocsViewToggle" },
+    config = function()
+      require("docs-view").setup {
+        position = "bottom",
+        hight = 10,
+      }
+    end,
+  },
 }
 -- }}}1
 
