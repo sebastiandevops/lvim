@@ -131,6 +131,12 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 vim.cmd('source ~/.config/lvim/user.vim')
 -- }}}1
 
+lvim.builtin.which_key.mappings["u"] = {
+  name = "+Utils",
+  d = { ":call DeleteEndingWhiteSpace()<cr>",     "Remove trailing whitespaces" },
+  r = { "<cmd>SearchBoxReplace confirm=menu<CR>", "Search&Replace" },
+
+}
 -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 lvim.builtin.which_key.mappings["t"] = {
@@ -142,8 +148,6 @@ lvim.builtin.which_key.mappings["t"] = {
   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
 }
-
-lvim.builtin.which_key.mappings["r"] = {"<cmd>SearchBoxReplace confirm=menu<CR>", "Search&Replace" }
 
 lvim.builtin.which_key.mappings["o"] = {
     name = "Toggle Display Options",
