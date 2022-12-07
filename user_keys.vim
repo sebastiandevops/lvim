@@ -87,7 +87,7 @@ vnoremap <A-Down> :m '>+1<CR>gv=gv
 nmap gj :call JumpToSelection()<CR>
 
 " Function keys.
-map <silent> <F1> :!xdg-open $HOME/.config/lvim/cheatsheet.html<CR>
+map <silent> <F1> :Cheatsheet<CR>
 map <silent> <F2> :call FoldingToggle()<CR>
 map <silent> <F3> :call ToggleAll()<CR>
 map <F4> :NvimTreeToggle<CR>
