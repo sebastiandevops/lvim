@@ -130,6 +130,11 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- vim.cmd('source ~/.config/lvim/lua/user/lualine.lua')
 vim.cmd('source ~/.config/lvim/user.vim')
 -- }}}1
+lvim.builtin.which_key.mappings["R"] = {
+  name = "+CodeRunner",
+  f = { "<cmd>Jaq<cr>",      "Run code in floating window" },
+  b = { "<cmd>Jaq bang<cr>", "Run code in a small window" },
+}
 
 lvim.builtin.which_key.mappings["u"] = {
   name = "+Utils",

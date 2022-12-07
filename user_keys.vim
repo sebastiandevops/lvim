@@ -98,7 +98,7 @@ map <F4> :NvimTreeToggle<CR>
 map <F6> :*&<CR>
 " Diff current buffer and the next.
 map <F7> :vsplit<CR>:bnext<CR>:windo diffthis<CR>
-map <F8> :LazyGit<CR>
+map <F8> :Jaq<CR>
 map <F9> :Telescope find_files<CR>
 " F10 reserved for kitty, open new terminal.
 " F11 reserved for kitty, full screen.
