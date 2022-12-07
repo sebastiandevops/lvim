@@ -135,8 +135,8 @@ lvim.builtin.which_key.mappings["u"] = {
   name = "+Utils",
   d = { ":call DeleteEndingWhiteSpace()<cr>",     "Remove trailing whitespaces" },
   r = { "<cmd>SearchBoxReplace confirm=menu<CR>", "Search&Replace" },
-
 }
+
 -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 lvim.builtin.which_key.mappings["t"] = {
