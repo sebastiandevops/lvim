@@ -73,7 +73,7 @@ lvim.builtin.alpha.active                                     = true
 lvim.builtin.dap.active                                       = true
 lvim.builtin.terminal.active                                  = true
 lvim.builtin.cmp.completion.keyword_length                    = 2
-lvim.builtin.telescope.defaults.layout_config.width           = 0.95
+-- lvim.builtin.telescope.defaults.layout_config.width           = 0.95
 lvim.builtin.nvimtree.setup.view.width                        = 25
 --
 lvim.builtin.cmp.confirm_opts.behavior = require("cmp").ConfirmBehavior.Insert
