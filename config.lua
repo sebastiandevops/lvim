@@ -134,7 +134,6 @@ vim.cmd('source ~/.config/lvim/user.vim')
 -- REPL configuration
 lvim.builtin.which_key.mappings['R'] = {
   name = "Python REPL",
-  f = { "<cmd>IronFocus<cr>",    "Open REPL in a small window" },
   h = { "<cmd>IronHide<cr>",     "Hide REPL" },
   o = { "<cmd>IronReplHere<cr>", "Open REPL here" },
   r = { "<cmd>IronRestart<cr>",  "REPL restart" },
