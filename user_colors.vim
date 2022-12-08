@@ -40,7 +40,7 @@ highlight NvimTreeVertSplit     ctermbg=NONE               guifg=#393535      gu
 highlight ColorColumn           ctermbg=NONE                                  guibg=NONE
 
 " Nvim tree root folder color
-highlight NvimTreeRootFolder                               guifg=8f8f8f
+highlight NvimTreeRootFolder                               guifg=#8f8f8f
 
 " Git changes and margins
 highlight GitSignsAdd                                      guifg=#286983      guibg=NONE
