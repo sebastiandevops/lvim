@@ -130,15 +130,6 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- vim.cmd('source ~/.config/lvim/lua/user/lualine.lua')
 vim.cmd('source ~/.config/lvim/user.vim')
 -- }}}1
-
--- REPL configuration
-lvim.builtin.which_key.mappings['R'] = {
-  name = "Python REPL",
-  h = { "<cmd>IronHide<cr>",     "Hide REPL" },
-  o = { "<cmd>IronReplHere<cr>", "Open REPL here" },
-  r = { "<cmd>IronRestart<cr>",  "REPL restart" },
-}
-
 -- Mappings for code runner - Jaq
 lvim.builtin.which_key.mappings["|"] = {
   name = "+CodeRunner",
@@ -623,34 +614,6 @@ lvim.plugins = {
   },
   -- hignlight chunk signcolumn plug of nvim
   { "yaocccc/nvim-hlchunk" },
-  -- quickly interact with the repl inside neovim
-  { 
-    "hkupty/iron.nvim",
-    config = function ()
-      require('iron.core').setup{
-        config = {
-            -- Whether a repl should be discarded or not
-            scratch_repl = true,
-            -- Your repl definitions come here
-            repl_definition = {
-              sh = {
-                -- Can be a table or a function that
-                -- returns a table (see below)
-                command = {"zsh"}
-              }
-            },
-            -- How the repl window will be displayed
-            -- See below for more information
-            repl_open_cmd = require('iron.view').bottom(10),
-          },
-          -- If the highlight is on, you can change how it looks
-          -- For the available options, check nvim_set_hl
-          highlight = {
-            italic = true
-          },
-        }
-      end,
-    },
 }
 -- }}}1
 
