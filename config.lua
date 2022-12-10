@@ -485,15 +485,6 @@ lvim.plugins = {
     requires = "hrsh7th/nvim-cmp",
     event = "InsertEnter",
   },
-  -- A searchable cheatsheet for neovim from within the editor using Telescope
-  {
-    "sudormrfbin/cheatsheet.nvim",
-    requires = {
-      { 'nvim-telescope/telescope.nvim' },
-      { 'nvim-lua/popup.nvim' },
-      { 'nvim-lua/plenary.nvim' },
-    },
-  },
   -- neoscroll
   {
     "karb94/neoscroll.nvim",
