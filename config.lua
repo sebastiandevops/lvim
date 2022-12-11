@@ -660,8 +660,6 @@ lvim.plugins = {
         {'nvim-lua/plenary.nvim'},
       }
     },
-    -- Vim/Neovim plugin for editing Jupyter notebook (ipynb) files through jupytext.
-    { 'goerz/jupytext.vim' },
 }
 -- }}}1
 
