@@ -1,6 +1,6 @@
 -- lualine config {{{1
 local components = require("lvim.core.lualine.components")
--- lvim.builtin.lualine.sections.lualine_a = { "mode" }
+lvim.builtin.lualine.sections.lualine_a = { "mode" }
 lvim.builtin.lualine.sections.lualine_z = { "progress" }
 
 lvim.builtin.lualine.options.theme = {
