@@ -59,7 +59,7 @@ lvim.builtin.alpha.dashboard.section.buttons.entries = {
 
 -- lvim config {{{1
 lvim.transparent_window                                       = true
-lvim.colorscheme                                              = "meliora"
+lvim.colorscheme                                              = "mellifluous"
 lvim.termguicolors                                            = true
 lvim.lsp.diagnostics.virtual_text                             = false
 lvim.builtin.nvimtree.setup.renderer.group_empty              = true
@@ -326,10 +326,10 @@ lvim.plugins = {
   { "marko-cerovac/material.nvim" },
   { "savq/melange" },
   {
-    'meliora-theme/neovim',
+    'ramojus/mellifluous.nvim',
     requires = {'rktjmp/lush.nvim'},
     config = function()
-    require 'meliora'.setup({
+    require 'mellifluous'.setup({
       transparent_background = {
         enabled = true,
         floating_windows = true,
