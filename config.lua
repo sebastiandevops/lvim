@@ -88,6 +88,7 @@ lvim.builtin.cmp.confirm_opts.behavior = require("cmp").ConfirmBehavior.Insert
 -- vim.opt.termguicolors = true -- set term gui colors (most terminals support this)
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
+vim.g.cheat_default_window_layout = 'float'
 
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -139,7 +140,7 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 vim.cmd('source ~/.config/lvim/user.vim')
 -- }}}1
 
-lvim.builtin.which_key.mappings["?"] = { "<Esc><Cmd>lua require('utils.cht').cht()<CR>", "Cheatsheets" }
+lvim.builtin.which_key.mappings["?"] = { "<cmd>Cheat<CR>", "Cheatsheets" }
 
 -- REPL configuration
 lvim.builtin.which_key.mappings['R'] = {
@@ -538,6 +539,8 @@ lvim.plugins = {
       {"MunifTanjim/nui.nvim"}
     }
   },
+  { "RishabhRD/nvim-cheat.sh" },
+  { "RishabhRD/popfix" },
   {
     "danymat/neogen",
     config = function()
@@ -700,11 +703,16 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- windows to close with "q"
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "cheat",
-  command = [[nnoremap <buffer><silent> q :bdelete!<CR>]],
+  pattern = {
+    "win_buf",
+  },
+  command = "nnoremap <buffer><silent> q <cmd>close!<CR>",
 })
 
+-- don't auto comment new line
+vim.api.nvim_create_autocmd("BufEnter", { command = [[set formatoptions-=cro]] })
 -- }}}1
 
 -- Dubugging cofiguration {{{1
