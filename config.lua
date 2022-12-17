@@ -706,9 +706,9 @@ vim.api.nvim_create_autocmd("FileType", {
 -- windows to close with "q"
 vim.api.nvim_create_autocmd("FileType", {
   pattern = {
-    "win_buf",
+    "cheat",
   },
-  command = "nnoremap <buffer><silent> q <cmd>close!<CR>",
+  command = "nnoremap <buffer><silent> q :bdelete!<CR>",
 })
 
 -- don't auto comment new line
