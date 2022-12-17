@@ -321,12 +321,7 @@ lvim.plugins = {
   -- multicursor
   { "mg979/vim-visual-multi" },
   -- themes
-  { "sainnhe/gruvbox-material"},
-  {  "kdheepak/monochrome.nvim" },
   {  "rebelot/kanagawa.nvim" },
-  {  "cpea2506/one_monokai.nvim" },
-  {  "Yazeed1s/minimal.nvim" },
-  { "marko-cerovac/material.nvim" },
   { "savq/melange" },
   {
     'ramojus/mellifluous.nvim',
@@ -507,11 +502,6 @@ lvim.plugins = {
         post_hook = nil, -- Function to run after the scrolling animation ends
       })
     end
-  },
-  -- Google keep plugin
-  {
-    'stevearc/gkeep.nvim',
-    run = ":UpdateRemotePlugins",
   },
   -- LazyGit plugin
   { "kdheepak/lazygit.nvim" },
