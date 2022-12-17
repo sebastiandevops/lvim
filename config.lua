@@ -139,6 +139,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 vim.cmd('source ~/.config/lvim/user.vim')
 -- }}}1
 
+lvim.builtin.which_key.mappings["?"] = { "<Esc><Cmd>lua require('utils.cht').cht()<CR>", "Cheatsheets" }
+
 -- REPL configuration
 lvim.builtin.which_key.mappings['R'] = {
   name = "Python REPL",
@@ -697,6 +699,12 @@ vim.api.nvim_create_autocmd("FileType", {
     require("nvim-treesitter.highlight").attach(0, "groovy")
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "cheat",
+  command = [[nnoremap <buffer><silent> q :bdelete!<CR>]],
+})
+
 -- }}}1
 
 -- Dubugging cofiguration {{{1
