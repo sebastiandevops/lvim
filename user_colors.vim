@@ -34,6 +34,7 @@ highlight NormalNC                                                            gu
 highlight VertSplit                                        guifg=#444444      guibg=NONE
 highlight Title                                            guifg=#e0def4      guibg=NONE
 highlight TelescopeBorder       ctermbg=NONE                                  guibg=NONE
+highlight FloatBorder                         gui=bold     guifg=#e0def4      guibg=NONE
 
 " vertical split colors
 highlight VertSplit             ctermbg=NONE                                  guibg=NONE
