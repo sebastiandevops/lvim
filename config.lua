@@ -325,7 +325,7 @@ lvim.plugins = {
   { "savq/melange" },
   {
     'ramojus/mellifluous.nvim',
-    requires = {'rktjmp/lush.nvim'},
+    dependencies = {'rktjmp/lush.nvim'},
     config = function()
     require 'mellifluous'.setup({
       transparent_background = {
@@ -341,7 +341,7 @@ lvim.plugins = {
   },
   {
     "rose-pine/neovim",
-    as = "rose-pine",
+    name = "rose-pine",
     config = function()
     require('rose-pine').setup({
       dark_variant = 'moon',
@@ -479,8 +479,8 @@ lvim.plugins = {
   -- cmp-tabnine
   {
     "tzachar/cmp-tabnine",
-    run = "./install.sh",
-    requires = "hrsh7th/nvim-cmp",
+    build = "./install.sh",
+    dependencies = "hrsh7th/nvim-cmp",
     event = "InsertEnter",
   },
   -- neoscroll
@@ -525,7 +525,7 @@ lvim.plugins = {
   { "christoomey/vim-tmux-navigator" },
   {
     "VonHeikemen/searchbox.nvim",
-    requires = {
+    dependencies = {
       {"MunifTanjim/nui.nvim"}
     }
   },
@@ -536,7 +536,7 @@ lvim.plugins = {
     config = function()
         require('neogen').setup {}
     end,
-    requires = "nvim-treesitter/nvim-treesitter",
+    dependencies = "nvim-treesitter/nvim-treesitter",
     -- Uncomment next line if you want to follow only stable versions
     -- tag = "*"
   },
@@ -545,7 +545,7 @@ lvim.plugins = {
   -- Neovim plugin to open documentation in bottom window
   {
     "amrbashir/nvim-docs-view",
-    opt = true,
+    lazy = true,
     cmd = { "DocsViewToggle" },
     config = function()
       require("docs-view").setup {
@@ -649,7 +649,7 @@ lvim.plugins = {
     {
       'sudormrfbin/cheatsheet.nvim',
 
-      requires = {
+      dependencies = {
         {'nvim-telescope/telescope.nvim'},
         {'nvim-lua/popup.nvim'},
         {'nvim-lua/plenary.nvim'},
