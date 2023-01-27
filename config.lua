@@ -601,15 +601,6 @@ lvim.plugins = {
   },
   -- hignlight chunk signcolumn plug of nvim
   { "yaocccc/nvim-hlchunk" },
-  {
-    'sudormrfbin/cheatsheet.nvim',
-
-    dependencies = {
-      {'nvim-telescope/telescope.nvim'},
-      {'nvim-lua/popup.nvim'},
-      {'nvim-lua/plenary.nvim'},
-    }
-  },
 }
 -- }}}1
 
