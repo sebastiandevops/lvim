@@ -142,15 +142,6 @@ vim.cmd('source ~/.config/lvim/user.vim')
 
 lvim.builtin.which_key.mappings["?"] = { "<cmd>Cheat<CR>", "Cheatsheets" }
 
--- REPL configuration
-lvim.builtin.which_key.mappings['R'] = {
-  name = "Python REPL",
-  h = { "<cmd>IronHide<cr>",     "Iron Hide" },
-  f = { "<cmd>IronFocus<cr>",    "Iron Focus" },
-  o = { "<cmd>IronRepl<cr>",     "Open REPL" },
-  r = { "<cmd>IronRestart<cr>",  "REPL restart" },
-}
-
 -- Mappings for code runner - Jaq
 lvim.builtin.which_key.mappings["|"] = {
   name = "+CodeRunner",
