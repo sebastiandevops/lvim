@@ -385,14 +385,6 @@ lvim.plugins = {
   {
     "rhysd/devdocs.vim"
   },
-  -- vim-surround
-  -- mappings to delete, change and add surroundings
-  -- Surroundings.  Try cs"'  in a string "with double quotes" to convert to single.
-  {
-    "tpope/vim-surround",
-    -- event = "BufRead",
-    --   keys = {"c", "d", "y"}
-  },
   -- Vim syntax file for Docker's Dockerfile and snippets for snipMate.
   {
     'ekalinin/Dockerfile.vim'
