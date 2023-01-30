@@ -553,7 +553,8 @@ lvim.plugins = {
           markdown = "glow %",
           python   = "python3 %",
           go       = "go run %",
-          sh       = "sh %"
+          sh       = "sh %",
+          java     = "java %"
         }
       },
       behavior = {
