@@ -2,6 +2,12 @@ vim.opt_local.shiftwidth = 2
 vim.opt_local.tabstop = 2
 vim.opt_local.cmdheight = 2 -- more space in the neovim command line for displaying messages
 
+local config = {
+    cmd = {'/home/sebastian/.local/bin/jdtls'},
+    root_dir = vim.fs.dirname(vim.fs.find({'.gradlew', '.git', 'mvnw'}, { upward = true })[1]),
+}
+require('jdtls').start_or_attach(config)
+
 local capabilities = require("lvim.lsp").common_capabilities()
 
 local status, jdtls = pcall(require, "jdtls")
