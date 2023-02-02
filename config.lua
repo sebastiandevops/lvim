@@ -602,6 +602,7 @@ lvim.plugins = {
   },
   -- hignlight chunk signcolumn plug of nvim
   { "yaocccc/nvim-hlchunk" },
+  { "mfussenegger/nvim-jdtls" },
 }
 -- }}}1
 
