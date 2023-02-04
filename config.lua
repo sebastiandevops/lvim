@@ -512,6 +512,12 @@ lvim.plugins = {
       {"MunifTanjim/nui.nvim"}
     }
   },
+  --  plugin shows a lightbulb in the sign column whenever a textDocument/codeAction is available at the current cursor position.
+  { "kosayoda/nvim-lightbulb",
+     dependencies = {
+       {'antoinemadec/FixCursorHold.nvim'}
+     }
+  },
   { "RishabhRD/nvim-cheat.sh" },
   { "RishabhRD/popfix" },
   {
