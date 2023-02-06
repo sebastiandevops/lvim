@@ -227,6 +227,9 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
 
+-- python provider setup
+vim.g.python3_host_prog = '/home/sebastian/anaconda3/bin/python3'
+
 
 -- generic LSP settings
 
