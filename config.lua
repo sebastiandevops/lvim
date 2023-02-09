@@ -88,6 +88,9 @@ lvim.builtin.cmp.confirm_opts.behavior = require("cmp").ConfirmBehavior.Insert
 -- vim.opt.termguicolors = true -- set term gui colors (most terminals support this)
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
+
+-- Shell for lunar vim
+vim.opt.shell = "/bin/sh"
 vim.g.cheat_default_window_layout = 'float'
 
 -- to disable icons and use a minimalist setup, uncomment the following
