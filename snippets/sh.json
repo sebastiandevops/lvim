@@ -1168,5 +1168,10 @@
     ],
     "description": "while_text_file",
     "prefix": "__while_text_file"
-  }
+  },
+    "shebang": {
+      "prefix": "shebang",
+      "body": ["#!/usr/bin/env bash"],
+      "description": "Shebang for bash files."
+    }
 }

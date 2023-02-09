@@ -1135,5 +1135,10 @@
     ],
     "description": "while Statements",
     "prefix": "while_else"
-  }
+  },
+    "shebang": {
+      "prefix": "shebang",
+      "body": ["#!/usr/bin/env python3"],
+      "description": "shebang for python3"
+    }
 }

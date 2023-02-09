@@ -522,8 +522,6 @@ lvim.plugins = {
     -- Uncomment next line if you want to follow only stable versions
     -- tag = "*"
   },
-  -- Neovim plugin to inserts a shebang line when editing a new file.
-  { 'samirettali/shebang.nvim' },
   -- Neovim plugin to open documentation in bottom window
   {
     "amrbashir/nvim-docs-view",
