@@ -316,8 +316,6 @@ lvim.plugins = {
   -- multicursor
   { "mg979/vim-visual-multi" },
   -- themes
-  {  "rebelot/kanagawa.nvim" },
-  { "savq/melange" },
   {
     'ramojus/mellifluous.nvim',
     dependencies = {'rktjmp/lush.nvim'},
@@ -333,15 +331,6 @@ lvim.plugins = {
       },
     })
     end
-  },
-  {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    config = function()
-    require('rose-pine').setup({
-      dark_variant = 'moon',
-    })
-    end,
   },
   -- Markers in margin. 'ma' adds marker
   {"kshenoy/vim-signature",
