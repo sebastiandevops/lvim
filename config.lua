@@ -195,10 +195,10 @@ lvim.builtin.which_key.mappings["j"] = {
 
 lvim.builtin.which_key.mappings["x"] = {
     name = "Terminal",
-    n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
-    u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-    t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
-    p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
+    n = { "<cmd>lua _NODE_TOGGLE()<cr>",                   "Node" },
+    u = { "<cmd>lua _NCDU_TOGGLE()<cr>",                   "NCDU" },
+    t = { "<cmd>lua _HTOP_TOGGLE()<cr>",                   "Htop" },
+    p = { "<cmd>lua _PYTHON_TOGGLE()<cr>",                 "Python" },
 }
 
 vim.api.nvim_set_keymap("n", "<TAB>",   ":bnext<CR>", { noremap = true, silent = true })
