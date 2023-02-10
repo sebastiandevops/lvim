@@ -89,8 +89,6 @@ lvim.builtin.cmp.confirm_opts.behavior = require("cmp").ConfirmBehavior.Insert
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
 
--- Shell for lunar vim
-vim.opt.shell = "/bin/sh"
 vim.g.cheat_default_window_layout = 'float'
 
 -- to disable icons and use a minimalist setup, uncomment the following
@@ -201,6 +199,14 @@ lvim.builtin.which_key.mappings["j"] = {
     s = {":call ShowJira()<CR>",                           "Show jira ticket in new buffer"},
     t = {":silent exec '!jump Ticket %:p:h'<CR>",          "Jump jira Ticket in browser"},
     u = {":silent exec '!jump TestReports %:p:h'<CR>",     "Jump Unit test reports"}
+}
+
+lvim.builtin.which_key.mappings["x"] = {
+    name = "Terminal",
+    n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
+    u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
+    t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
+    p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
 }
 
 vim.api.nvim_set_keymap("n", "<TAB>",   ":bnext<CR>", { noremap = true, silent = true })
